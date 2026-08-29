@@ -66,7 +66,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="amount" class="form-label">Amount</label>
-                        <input type="number" name="amount" id="amount" class="form-control" step="0.01" min="0.01" required>
+                        <input type="number" name="amount" id="amount" class="form-control amount-input" step="0.01" min="0" required>
                     </div>
                     <div class="mb-3">
                         <label for="memo" class="form-label">Memo</label>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="request_amount" class="form-label">Amount</label>
-                        <input type="number" name="amount" id="request_amount" class="form-control" step="0.01" min="0.01" required>
+                        <input type="number" name="amount" id="request_amount" class="form-control amount-input" step="0.01" min="0" required>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Message</label>

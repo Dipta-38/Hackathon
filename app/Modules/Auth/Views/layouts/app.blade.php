@@ -108,6 +108,14 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+        document.querySelectorAll('.amount-input').forEach((input) => {
+            const validateAmount = () => {
+                input.setCustomValidity(Number(input.value) <= 0 ? 'Amount must be greater than 0.' : '');
+            };
+            input.addEventListener('input', validateAmount);
+            input.addEventListener('invalid', validateAmount);
+        });
+
         document.querySelectorAll('.recipient-preview-form').forEach((form) => {
             const input = form.querySelector('input[name="to_user_id"]');
             const preview = form.querySelector('.recipient-preview');

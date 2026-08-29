@@ -15,7 +15,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="amount" class="form-label">Amount</label>
-                        <input type="number" name="amount" id="amount" class="form-control form-control-lg" min="0.01" step="0.01" required>
+                        <input type="number" name="amount" id="amount" class="form-control form-control-lg amount-input" min="0" step="0.01" required>
                     </div>
                     <div class="mb-3">
                         <label for="memo" class="form-label">Memo</label>
